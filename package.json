@@ -1,0 +1,25 @@
+{
+  "name": "blog-post-generator",
+  "version": "1.0.0",
+  "description": "AI-powered SEO blog post generator from outlines and research notes",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "bpost": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "seo",
+    "generator",
+    "ai",
+    "content",
+    "markdown"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {}
+}
