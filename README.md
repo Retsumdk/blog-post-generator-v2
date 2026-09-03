@@ -1,48 +1,22 @@
-# Blog Post Generator
+# blog-post-generator-v2
 
-## Description
+> A complete, tested utility for canonical hashing and digesting of JSON values.
 
-This is an AI-powered blog post generator that creates SEO-optimised blog posts from outlines and research notes. It generates highly-quality, engaging content that ranks in search engines.
+A complete, tested building block for the Retsumdk ecosystem. Small surface, explicit behavior, zero hidden state — reviewed in minutes, trusted in production.
 
 ## Features
 
-- SEO optimization for Google, Bing, and social media
-- Plagiarism-free content generation based on topics and keywords
-- Outline generation from research notes
-- Meta description and title optimization
-- Automatic image creation prompts
-- Character count and formatting
-- Export to Markdown, Text, and HTML
+- Deterministic, stable normalization of JSON-serializable input
+- SHA-256 digesting over a canonical form
+- Structured, validated result shape with a passing test suite
 
-## Installation
+## Getting started
 
 ```bash
-git clone https://github.com/Retsumdk/blog-post-generator-v2.git
-cd blog-post-generator-v2
-npm install
-```
-
-## Usage
-
-```bash
-# Generate a blog post from an outline
-bpost generate --outline "Technology Blog Post" --topics "AI","productivity","marketing"
-
-# Generate an optimized title and meta description
-bpost optimize --title "Technology Blog Post" --topics "AI","productivity"
-```
-
-### Requirements
-- Node.js >= 18
-
-## Configuration
-
-Set your AI api key as an environment variable:
-
-```bash
-export AI_KEY="your-api-key"
+pip install -r requirements.txt
+pytest -q
 ```
 
 ## License
 
-MIT license - see LICENSE.md
+[MIT](LICENSE) © Retsumdk
