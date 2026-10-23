@@ -1,9 +1,32 @@
 [build-system]
-requires = ["setuptools"]
+requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "blog_post_generator_v2"
-version = "0.1.0"
+name = "blog-post-generator-v2"
+version = "2.0.0"
+description = "Deterministic SEO blog-post drafts from outlines and research notes - zero dependencies"
 readme = "README.md"
+requires-python = ">=3.9"
 license = {text = "MIT"}
+keywords = ["blog", "seo", "content", "generator", "markdown", "outline", "draft"]
+authors = [{ name = "Retsumdk" }]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Text Processing :: Markup :: Markdown",
+]
+
+[project.scripts]
+bpgen = "blog_post_generator_v2.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["blog_post_generator_v2"]

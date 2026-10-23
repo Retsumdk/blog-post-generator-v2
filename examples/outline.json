@@ -1,0 +1,26 @@
+{
+  "title": "Static Site Search with Lunr.js: A Practical Guide",
+  "primary_keyword": "static site search",
+  "audience": "frontend developers",
+  "sections": [
+    {
+      "heading": "Why client-side search works",
+      "points": [
+        "no server infrastructure means zero operating cost for small sites",
+        "the index ships as a static file, so a CDN does the distribution"
+      ]
+    },
+    {
+      "heading": "Building the index",
+      "points": [
+        "precompute the Lunr index at build time from your content pipeline"
+      ]
+    },
+    {
+      "heading": "Query UX patterns",
+      "points": [
+        "debounce input and highlight matched terms in results"
+      ]
+    }
+  ]
+}
