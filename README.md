@@ -57,10 +57,16 @@ pip install -r requirements.txt
 python -m pytest -q        # 19 tests
 ```
 
+Or straight from GitHub (also installs the `bpgen` console script):
+
+```bash
+pip install git+https://github.com/Retsumdk/blog-post-generator-v2.git
+```
+
 ## CLI
 
 ```bash
-python -m blog_post_generator_v2 examples/outline.json \
+bpgen examples/outline.json \
     --notes examples/notes.md \
     --date 2026-10-23 \
     --out draft.md \

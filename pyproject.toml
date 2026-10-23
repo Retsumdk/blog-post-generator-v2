@@ -9,6 +9,9 @@ description = "Deterministic SEO blog-post drafts from outlines and research not
 readme = "README.md"
 requires-python = ">=3.9"
 license = {text = "MIT"}
+
+[project.scripts]
+bpgen = "blog_post_generator_v2.cli:main"
 keywords = ["blog", "seo", "content", "generator", "markdown", "outline", "draft"]
 authors = [{ name = "Retsumdk" }]
 classifiers = [
@@ -21,9 +24,6 @@ classifiers = [
     "Programming Language :: Python :: 3.12",
     "Topic :: Text Processing :: Markup :: Markdown",
 ]
-
-[project.scripts]
-bpgen = "blog_post_generator_v2.cli:main"
 
 [project.optional-dependencies]
 dev = ["pytest>=7"]
